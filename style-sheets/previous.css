@@ -1,0 +1,4 @@
+.tabs-pre {
+  display: grid;
+  grid-gap: 20px;
+}

@@ -1,0 +1,43 @@
+.delivery-status {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+  align-items: center;
+  margin-left: 20px;
+  position: relative;
+}
+
+.line {
+  background-color: black;
+  width: 5px;
+  height: 300px;
+  border-radius: 10px;
+  margin-left: 8px;
+}
+
+.smallcircle {
+  border-radius: 50%;
+  background-color: var(--green);
+  width: 20px;
+  height: 20px;
+}
+
+.content {
+  position: absolute;
+}
+
+.circles {
+  position: absolute;
+  top: 0;
+  display: grid;
+  grid-gap: 125px;
+  grid-auto-flow: row;
+}
+
+.right-section {
+  display: grid;
+  grid-gap: 125px;
+  margin-left: 25px;
+  margin-top: 15px;
+}

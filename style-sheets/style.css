@@ -1,0 +1,178 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html {
+  --blue: #68c3d4;
+  --green: #55b48b;
+  --white: #f5f5f5;
+}
+
+body {
+  background-color: var(--white);
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template:
+    "header" auto
+    "main" 1fr
+    "footer" auto/
+    1fr;
+}
+
+/* Global Class */
+
+.color-white {
+  color: var(--white);
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.background-color {
+  background: linear-gradient(var(--green), var(--blue));
+}
+
+/* Header */
+
+header {
+  grid-area: header;
+}
+
+header > img {
+  place-self: end;
+}
+
+/* Main */
+main {
+  grid-area: main;
+}
+
+.payment-card {
+  background-color: var(--green);
+  width: 90vw;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.payment-content {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 166px);
+  place-content: center;
+  grid-gap: 5px;
+}
+
+.master-card {
+  place-self: end;
+  display: grid;
+  place-items: center;
+  margin-right: 10px;
+}
+
+.tab {
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(var(--green), var(--blue));
+  border-radius: 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.box-shadow {
+  box-shadow: 1px 1px 1px lightgray;
+}
+
+.image {
+  width: 50px;
+  height: 25px;
+}
+
+/* Footer */
+
+footer {
+  grid-area: footer;
+  background: linear-gradient(var(--green), var(--blue));
+}
+
+.icon {
+  width: 30px;
+  color: white;
+  height: 30px;
+}
+
+/* Padding */
+
+.padding-10 {
+  padding: 10px;
+}
+
+.padding-20 {
+  padding: 20px;
+}
+
+.padding-20-l {
+  padding-left: 20px;
+}
+
+.padding-10-l {
+  padding-left: 10px;
+}
+
+/* Margin */
+
+.margin-40-t {
+  margin-top: 40px;
+}
+
+/* Grid */
+
+.grid {
+  display: grid;
+  place-items: center;
+}
+
+.grid-gap {
+  grid-gap: 10px;
+}
+
+.grid-col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.grid-ai {
+  display: grid;
+  align-items: center;
+}
+
+.grid-col-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px;
+  place-items: center;
+}
+
+.grid-row-3 {
+  display: grid;
+  grid-auto-flow: row;
+}

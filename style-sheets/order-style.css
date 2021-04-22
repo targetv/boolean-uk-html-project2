@@ -1,0 +1,78 @@
+.s-drinks,
+.a-drinks {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.s-drinks > .tabs,
+.a-drinks > .tabs {
+  grid-template-columns: repeat(auto-fit, 160px);
+  grid-gap: 15px;
+}
+
+body.soft-drinkson .s-drinks,
+body.alc-drinkson .a-drinks {
+  visibility: visible;
+}
+
+.dismiss {
+  height: 15px;
+  width: 15px;
+}
+
+.drinks-list {
+  position: relative;
+}
+
+main {
+  height: 100%;
+  overflow: scroll;
+}
+
+.border {
+  border: 1px solid var(--green);
+}
+
+.coca-cola {
+  background: no-repeat center/110% url("../img/CocaCola_900.jpeg");
+}
+
+.fanta {
+  background: no-repeat center/100% url("../img/Fanta_Logo_neu.png");
+}
+
+.sprite {
+  background: no-repeat center/110% url("../img/sprite-logo-vector.png");
+}
+
+.pepsi {
+  background: no-repeat center/80% url("../img/pepsi.png");
+}
+
+.fruit {
+  background: no-repeat center/100% url("../img/fruit-shoot.png");
+}
+
+.water {
+  background: no-repeat center/100% url("../img/water.png");
+}
+
+.carling {
+  background: no-repeat center/100% url("../img/Carling-Logo.png");
+}
+
+.smirnoff {
+  background: no-repeat center/100% url("../img/1200px-Smirnoff.svg.png");
+}
+
+.rum {
+  background: no-repeat center/100%
+    url("../img/18-Most-Famous-Rum-Brands-and-Logos.jpeg");
+}
+
+.wine {
+  background: no-repeat center/100%
+    url("../img/istockphoto-1132889797-612x612.jpeg");
+}
