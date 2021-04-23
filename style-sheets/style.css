@@ -56,6 +56,11 @@ header > img {
   place-self: end;
 }
 
+.profile-image {
+  width: 50px;
+  border-radius: 50%;
+}
+
 /* Main */
 main {
   grid-area: main;
